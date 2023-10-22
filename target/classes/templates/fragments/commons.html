@@ -28,7 +28,7 @@
                     <a class="nav-link h5 my-text-color" th:if="${@loggedUser.isLogged}" th:text="'Welcome, ' + ${@loggedUser.username}">Welcome, {username}</a>
                 <li th:if="${@loggedUser.isLogged}" class="nav-item col-md-4">
                     <form th:action="@{/logout}" th:method="POST">
-                        <button type="submit" class="btn-link nav-link my-text-color active h5 logout">Logout</button>
+                        <button type="submit" style="text-decoration: none; border: none; background: none;" class="btn-link nav-link my-text-color active h5 logout">Logout</button>
                     </form>
                 </li>
             </ul>
